@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>/opt/hbase/data/hbase</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>hbase</value>
+    </property>
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hbase.unsafe.stream.capability.enforce</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>hbase.security.authentication</name>
+        <value>kerberos</value>
+    </property>
+    <property>
+        <name>hbase.client.keytab.file</name>
+        <value>/share/hbase-service.keytab</value>
+    </property>
+    <property>
+        <name>hbase.client.kerberos.principal</name>
+        <value>hbase/hbase@EXAMPLE.COM</value>
+    </property>
+    <property>
+        <name>hbase.master.keytab.file</name>
+        <value>/share/hbase-service.keytab</value>
+    </property>
+    <property>
+        <name>hbase.master.kerberos.principal</name>
+        <value>hbase/hbase@EXAMPLE.COM</value>
+    </property>
+    <property>
+        <name>hbase.regionserver.keytab.file</name>
+        <value>/share/hbase-service.keytab</value>
+    </property>
+    <property>
+        <name>hbase.regionserver.kerberos.principal</name>
+        <value>hbase/hbase@EXAMPLE.COM</value>
+    </property>
+</configuration>
